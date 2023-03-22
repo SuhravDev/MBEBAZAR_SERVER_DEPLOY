@@ -1,0 +1,63 @@
+// hero carousel
+.heroDots li button:before {
+  font-size: 15px !important;
+  transition: all 0.4s;
+}
+.heroDots li.slick-active button:before {
+  font-size: 20px !important;
+  color: $PrimaryGreen !important;
+}
+
+// popular products quick view slider
+.quickViewLeftSlide .slick-arrow {
+  display: none;
+  z-index: 2;
+  &::before {
+    color: $PrimaryGreen !important;
+    opacity: 1 !important;
+    font-size: 30px !important;
+  }
+}
+.quickViewLeftSlide .slick-prev {
+  left: -16px !important;
+}
+.quickViewLeftSlide .slick-next {
+  right: -20px !important;
+}
+.quickViewLeftSlide .slick-current {
+  border: 1px solid $PrimaryGreen !important;
+}
+.quickViewLeftSlide .slick-slide {
+  margin-right: 20px;
+  border-radius: 20px;
+  width: 100px !important;
+}
+.quickViewLeftSlide .slick-slider:hover .slick-arrow {
+  display: block;
+}
+.quickViewLeftSlide {
+  width: 100%;
+}
+
+// slide view
+.products_detail_slide_image {
+  @media screen and (max-width: $md) {
+    width: auto !important;
+    height: auto !important;
+  }
+}
+.product-details-slider .BrainhubCarousel__container {
+  border: 1px solid rgb(209, 209, 209);
+  width: 70%;
+  @media screen and (max-width: $md) {
+    width: 100%;
+  }
+}
+.product-details-slider .BrainhubCarousel__thumbnail--selected img {
+  border: 2px solid $PrimaryGreen !important;
+}
+
+// toast
+.react-toast-notifications__container.css-nvf14r-ToastContainer {
+  z-index: 9000 !important;
+}

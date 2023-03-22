@@ -1,0 +1,19 @@
+.carouselContainer {
+  width: 100%;
+  height: 350px;
+  margin-top: 2rem;
+  border-radius: 30px;
+  z-index: 0;
+  @media screen and (min-width: $md) {
+    height: 400px;
+  }
+}
+
+.heroDots li button:before {
+  font-size: 15px !important;
+  transition: all 0.4s;
+}
+.heroDots li.slick-active button:before {
+  font-size: 20px !important;
+  color: $PrimaryGreen !important;
+}
